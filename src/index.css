@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   background-color: white;
-  height: 600px;
+  height: 700px;
 }
 
 .NavBar {
@@ -59,6 +59,11 @@ body {
   color: grey;
   font-size: 39px;
   font-weight: 300;
+}
+
+.static-subheader {
+  line-height: 25px;
+  margin: 10px 0px 30px 0px;
 }
 
 .static-txt {
@@ -154,4 +159,21 @@ body {
   margin-right: 100px;
   margin-left: 30px;
   /* margin: 10px 10px 50px 50px; */
+}
+
+.block3-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  height: 700px;
+}
+
+.block3-right {
+  background-color: black;
+}
+
+.block3-left {
+  background-color: grey;
 }

@@ -14,17 +14,7 @@ const Waitlist = ({ title }) => {
                         </ul>
                     </div>
                 </div>
-                    {/* <span >Pay your employees upfront every </span>
-                    <span className="main-header">quarter.</span> */}
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    {/* <input placeholder={title} type="text" /> */}
-                    <h3>We’re a capital generative marketplace that enables companies to provide upfront salary for their employees at zero cost.</h3>
+                    <h3 className="static-subheader">We’re a capital generative marketplace that enables companies to provide upfront salary for their employees at zero cost.</h3>
                     <Button />
                 </div>
             </div>

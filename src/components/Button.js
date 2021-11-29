@@ -1,8 +1,6 @@
 import axios from 'axios';
 import React, {useState} from "react";
 
-    // taret is teh username, using setusername as the function to creeate and add the new state, 
-
 const Button = () => {
     let [email, setEmail] = useState({
         email: ''
