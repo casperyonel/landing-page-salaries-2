@@ -18,10 +18,10 @@ const Section4 = () => {
                 
 
         </div>
-        <a href="#">
+        {/* <a href="#">
                     <span>Get Started</span>
                     <div className="liquid"></div>
-                </a>
+                </a> */}
         </div>
     )
 }
