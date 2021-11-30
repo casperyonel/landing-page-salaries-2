@@ -33,6 +33,8 @@ const Button = () => {
             </div>
             <div className="btn-outer">
                 <button onClick={submit} className='btn'>Join the Waitlist</button>
+                
+             
             </div>
         </form>
     )

@@ -3,6 +3,7 @@ import marketplace from "../marketplace.png"
 
 const Section4 = () => {
     return (
+        <div className="block4-outer">
         <div className="block4-main">
             <div className="block4-left">
                 <div className="static4-header">Unlocking a new asset class</div>
@@ -12,6 +13,15 @@ const Section4 = () => {
             <div className="block4-right">
                 <img id="section4-image" src={marketplace} alt="" />
             </div>
+
+              
+                
+
+        </div>
+        <a href="#">
+                    <span>Get Started</span>
+                    <div className="liquid"></div>
+                </a>
         </div>
     )
 }
