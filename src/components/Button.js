@@ -3,12 +3,10 @@ import React, {useState} from "react";
 
 const Button = () => {
     let [email, setEmail] = useState({
-        email: ''
+        email: '',
     })
 
     const submit = e => {
-
-
         e.preventDefault()
 
         if (!e.target.value === '') {

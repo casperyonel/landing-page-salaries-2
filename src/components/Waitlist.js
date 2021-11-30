@@ -14,7 +14,7 @@ const Waitlist = ({ title }) => {
                         </ul>
                     </div>
                 </div>
-                    <h3 className="static-subheader">We’re a capital generative marketplace that enables companies to provide upfront salary for their employees at zero cost.</h3>
+                    <h3 className="static-subheader">Solidity is a capital generative marketplace that enables companies to provide upfront salary for their employees at zero cost.</h3>
                     <Button />
                 </div>
             </div>

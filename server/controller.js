@@ -13,7 +13,7 @@ const sequelize = new Sequelize(CONNECTION_STRING, {
 
 module.exports = { 
     updateWaitlist: (req, res) => {
-    let { email } = req.body
+    let { email, } = req.body
     sequelize.query(`
     INSERT INTO waitlist (email)
     VALUES ('${email}');
