@@ -22,22 +22,83 @@ body {
   height: 900px;
 }
 
+
+/* NAVBAR BEGIN */
+
 .NavBar {
-  background-color: green;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+}
+
+.NavBar-main {
   display: flex;
   justify-content: space-between;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: white;
+}
+
+.nav-title {
+  /* margin: 30px 30px; */
+  padding: 10px 30px;
+  font-size: 15px;
+}
+
+#logo-title {
+  font-size: 26px;
+  font-weight: 600;
 }
 
 #logo {
-  width: 80px;
-  height: 80px;
+  height: 28px;
+  margin: 0px 15px;;
 }
 
+/* NAVBAR END */
 
 
 
 
 /* TYPEWRITER BEGINS HERE */
+
+
+.form-main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-box {
+  width: 250px;
+  margin: 0px 5px;
+  height: 30px;
+  border-color: lightgrey;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 0px 10px;
+}
+
+.btn {
+  margin: 17px 0px;
+  width: 550px;
+  height: 40px;
+  color: white;
+  font-size: 17px;
+  background-color: rgb(22, 22, 22);
+  border: none;
+  border-radius: 8px;
+  margin-right: 16px;;
+}
+
+.btn-outer {
+  display: flex;
+  justify-content: center;
+}
 
 .waitlist-container {
   display: flex;
@@ -141,7 +202,7 @@ body {
 }
 
 @keyframes typing {
-  20%, 80% {
+  15%, 85% {
     left: calc(100% + 4px);
   }
   100%{
@@ -155,6 +216,10 @@ body {
 }
 
 /* TYPEWRITER ENDS HERE */
+
+
+
+
 
 .block-2-right {
   display: flex;

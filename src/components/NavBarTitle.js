@@ -1,7 +1,7 @@
 const NavBarTitle = ({ text }) => {
     return (
         <div>
-            <h3>
+            <h3 className="nav-title">
                 {text}
             </h3>
         </div>

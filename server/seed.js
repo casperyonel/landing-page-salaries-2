@@ -15,11 +15,12 @@ module.exports = {
     seed: (req, res) => {
         sequelize.query(`
         CREATE TABLE waitlist (
-        user_id SERIAL PRIMARY KEY, 
+        user_id SERIAL PRIMARY KEY,
+        company_name varchar(200),
         email varchar(200));
 
-        INSERT INTO waitlist (user_id, email)
-        values (1, 'yonelcasper@gmail.com');
+        INSERT INTO waitlist (user_id, company_name, email)
+        values (1, 'Stripe', 'yonelcasper@gmail.com');
         `).then(() => {
             console.log('DB seeded!')
             res.sendStatus(200)

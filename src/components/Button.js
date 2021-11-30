@@ -26,16 +26,18 @@ const Button = () => {
     }
     
     return (
-        <form >
-            <label>
-                Email: 
-                 <input placeholder="email" type="text" onChange={e => setEmail(e.target.value)}/>
-            </label>
-            <button onClick={submit} className='btn'>Join the Waitlist</button>
+        <form  classname="form-outer" >
+            <div className="form-main">
+                <label >
+                    <input className="input-box" placeholder="Company Name" type="text" onChange={e => setEmail(e.target.value)}/>
+                    <input className="input-box" placeholder="Email Address" type="text" onChange={e => setEmail(e.target.value)}/>
+                </label>
+            </div>
+            <div className="btn-outer">
+                <button onClick={submit} className='btn'>Join the Waitlist</button>
+            </div>
         </form>
     )
 }
-
-// both enter and click button works, why?
     
 export default Button
