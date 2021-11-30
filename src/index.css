@@ -1,3 +1,13 @@
+:root {
+  --fontColor: black;
+  --fontWeight: 549;
+  --fontSize: 39px;
+  --lineHeight: 30px;
+  --headerMargin: 30px 190px;
+  --imageWidth: 700px;
+  --imageHeight: 700px;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -8,9 +18,8 @@ body {
 
 .block2 {
   display: flex;
-  align-items: center;
   background-color: white;
-  height: 700px;
+  height: 900px;
 }
 
 .NavBar {
@@ -56,13 +65,14 @@ body {
 }
 
 .wrapper .static-txt {
-  color: grey;
-  font-size: 39px;
-  font-weight: 300;
+  color: var(--fontColor);
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
 }
 
 .static-subheader {
-  line-height: 25px;
+  line-height: var(--lineHeight);
+  font-weight: 300;
   margin: 10px 0px 30px 0px;
 }
 
@@ -92,10 +102,10 @@ body {
   position: relative;
   top: 0;
   /* these above two are for slide */
-  color: grey;
+  color:var(--fontColor);
   list-style: none;
-  font-size: 39px;
-  font-weight: 300;
+  font-size: var(--fontSize);
+  font-weight: var(--fontWeight);
   animation: slide 10.5s steps(3) infinite;
   /* steps are number of words, change to 6, since 6 / 2 with 3 words  */
 }
@@ -141,7 +151,7 @@ body {
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: grey; }
+  50% { border-color: var(--fontColor) }
 }
 
 /* TYPEWRITER ENDS HERE */
@@ -161,19 +171,88 @@ body {
   /* margin: 10px 10px 50px 50px; */
 }
 
+
+
+
+
+/* BLOCK 3 */
+
+
 .block3-main {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: green;
-  height: 700px;
+  height: 1100px;
 }
 
 .block3-right {
-  background-color: black;
+    width: 580px;
+
 }
 
 .block3-left {
-  background-color: grey;
+ 
+}
+
+
+.static3-header {
+
+  font-size: var(--fontSize);
+  
+}
+
+
+.static3-subheader {
+  line-height: var(--lineHeight);
+  font-weight: 300;
+ 
+}
+
+#section3-image {
+  width: var(--imageWidth);
+  height: var(--imageHeight);
+  margin-right: 190px;
+}
+
+
+
+
+
+
+/* BLOCK 4 */
+
+.block4-main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgreen;
+  height: 1100px;
+}
+
+.block4-right {
+ 
+}
+
+.block4-left {
+  width: 580px;
+}
+
+
+.static4-header {
+  font-size: var(--fontSize);
+ 
+}
+
+.static4-subheader {
+  line-height: var(--lineHeight);
+  font-weight: 300;
+}
+
+#section4-image {
+  width: var(--imageWidth);
+  height: var(--imageHeight);
+  margin-left: 190px;
 }
