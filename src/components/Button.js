@@ -10,9 +10,7 @@ const Button = () => {
         companyName: '',
     })
 
-    let [count, setCount] = useState(0)
-
-    
+    let [count, setCount] = useState()
 
     const submit = e => {
         e.preventDefault()
@@ -24,22 +22,23 @@ const Button = () => {
         .then(res => console.log(res))
         .catch(err => console.log(err))
         
+
         axios.get('/waitlistCount')
         .then(res => {
             setCount(res.data[0].count)
             // axios sends this to us in res.data form still, as an object, and then that object is an array since it's from database.
-            // .count is the way we're accessing the 
+            // .count is the way we're accessing the object of that index position of the array the DB sends us.
         })
         .catch(err => console.log(err))
 
         setEmail('')
         setCompanyName('')
-        setCount(0)
+        // setCount(0)
 
     }
     
     return (
-        <form  classname="form-outer" >
+        <form  className="form-outer" >
             <div className="form-main">
                 <label >
                     <input className="input-box" placeholder="Company Name" type="text" onChange={e => setCompanyName(e.target.value)}/>
@@ -50,7 +49,7 @@ const Button = () => {
                 <button onClick={submit} className='btn'>Join the Waitlist</button>
                 
             </div>
-            <div>Waitlist position: {count} </div>
+            <div className="waitlist-counter">Waitlist Position: {count} </div>
         </form>
     )
 }
