@@ -269,10 +269,10 @@ body {
 }
 
 #dashboard {
-  width: 700px;
-  height: 450px;
+  /* width: 700px;
+  height: 450px; */
   margin-right: 100px;
-  margin-left: 30px;
+  margin-left: 40px;
   /* margin: 10px 10px 50px 50px; */
 }
 
