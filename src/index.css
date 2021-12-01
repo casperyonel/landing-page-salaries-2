@@ -6,15 +6,11 @@
   --headerMargin: 30px 190px;
   --imageWidth: 700px;
   --imageHeight: 700px;
-  --accentColorText: #daa520;
+  --accentColorText: #5755C2;
 }
 
 body {
   font-family: sans-serif;
-}
-
-.block1 {
-  
 }
 
 .block2 {
